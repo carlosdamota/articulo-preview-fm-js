@@ -1,0 +1,199 @@
+body {
+  background-color: hsl(210, 46%, 95%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+article {
+  box-shadow: -1px 1px 3em hsla(217, 19%, 35%, 0.5);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  width: 20rem;
+  border-radius: 0.7em;
+  .img-article {
+    width: 100%;
+    height: 16em;
+    overflow: hidden;
+    border-radius: inherit;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    & img {
+      width: 100%;
+    }
+    @media (min-width: 768px) {
+      & {
+        height: 19em;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 0.7em;
+        & img {
+          width: 120%;
+        }
+      }
+    }
+  }
+  .section-text {
+    color: hsl(217, 19%, 35%);
+    margin: 3em;
+    margin-bottom: 2em;
+    & h2 {
+      font-size: 1.2em;
+      font-weight: 700;
+      margin-bottom: 1em;
+    }
+    & p {
+      color: hsl(214, 17%, 51%);
+      margin-bottom: 2em;
+      font-size: 1em;
+      @media (min-width: 768px) {
+        & {
+          margin-bottom: 1em;
+        }
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    & {
+      flex-direction: row;
+      width: 45rem;
+    }
+  }
+}
+
+.user-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1em 1.5em;
+  padding: 0 1em;
+  & img {
+    &:first-child {
+      width: 3em;
+      border-radius: 50%;
+      margin: 0 1em 0 0;
+    }
+  }
+  .user {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    line-height: 5px;
+    & p {
+      color: hsl(212, 23%, 69%);
+      & strong {
+        font-weight: 700;
+        color: hsl(217, 19%, 35%);
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    & {
+      margin-top: 0;
+    }
+  }
+}
+
+.user-info-off {
+  @media (max-width: 768px) {
+    display: none;
+  }
+  .share-btn {
+    background-color: hsl(214, 17%, 51%);
+    & ion-icon {
+      color: hsl(210, 46%, 95%);
+    }
+  }
+}
+.share-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.1em 2.3em 1.1em 2.3em;
+  background-color: hsl(217, 19%, 35%);
+  border-radius: 0 0 0.7em 0.7em;
+  z-index: 0;
+  .share-links {
+    .sandwich {
+        z-index: -3;
+        position: absolute
+    }
+    display: flex;
+    justify-content: flex-start;
+    gap: 1em;
+    align-items: center;
+    color: hsl(210, 46%, 95%);
+    text-align: center;
+    & p {
+      letter-spacing: 0.2em;
+      font-weight: 300;
+    }
+    & div {
+      display: flex;
+
+      & ion-icon {
+        font-size: 1.6em;
+        justify-self: center;
+      }
+    }
+  }
+  .share-btn {
+    background-color: hsl(214, 17%, 51%);
+    & ion-icon {
+      color: hsl(210, 46%, 95%);
+    }
+    @media (min-width: 768px) {
+      & {
+        transform: scale(0);
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    & {
+      width: 12em;
+      padding: 0.8em 2.3em 0.8em 2.3em;
+      border-radius: 0.7em;
+      position: absolute;
+      bottom: 7.4em;
+      right: -4.2em;
+      z-index: 0;
+      .sandwich {
+        display: block;
+        position: absolute;
+        z-index: -1;
+        top: 2.6em;
+        right: 7em;
+        height: 2em;
+        width: 2em;
+        transform: rotate(45deg);
+        background-color: hsl(217, 19%, 35%);
+      }
+    }
+  }
+}
+
+.share-container-off {
+  display: none;
+}
+
+.share-btn {
+  background-color: hsl(210, 46%, 95%);
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & ion-icon {
+    font-size: 1.3em;
+    color: hsl(214, 17%, 51%);
+  }
+  &:hover {
+    background-color: hsl(212, 23%, 69%);
+    ion-icon {
+      color: hsl(210, 46%, 95%);
+    }
+  }
+}
