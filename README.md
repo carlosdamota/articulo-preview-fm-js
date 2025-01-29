@@ -71,7 +71,7 @@ This project was a great opportunity to practice **CSS nesting** and **JavaScrip
 2. **JavaScript DOM Manipulation**:
    - I implemented a simple toggle function to show/hide the share button.
    - Example:
-     ```javascript
+    ```javascript
     const btnOn= document.getElementsByClassName("share-btn")[0];
     const btnOff= document.getElementsByClassName("share-btn")[1];
     const userInfo = document.getElementsByClassName("user-info")[0];
@@ -84,8 +84,7 @@ This project was a great opportunity to practice **CSS nesting** and **JavaScrip
 
     btnOn.addEventListener("click", share);
     btnOff.addEventListener("click", share);
-
-     ```
+    ```
 
 3. **Responsive Design**:
    - I used a mobile-first approach and media queries to ensure the component looks great on all devices.
