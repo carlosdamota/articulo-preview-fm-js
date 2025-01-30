@@ -1,53 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" class="hydrated">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Article Preview</title>
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script
+      type="module"
+      src=" https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js "
+      defer
+    ></script>
+    <script
+      nomodule
+      src=" https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js "
+      defer
+    ></script>
     <script src="./js/script.js" defer></script>
-</head>
-<body>
-        <article>
-            <div class="img-article">
-                <img src="./assets/images/drawers.jpg" alt="wardrobe exhibition image">
+  </head>
+  <body>
+    <main>
+      <article>
+        <div class="img-article">
+          <img
+            src="./assets/images/drawers.jpg"
+            alt="wardrobe exhibition image"
+          />
+        </div>
+
+        <div>
+          <div class="section-text">
+            <h2>
+              Shift the overall look and feel by adding these woderful touches
+              to forniture in your home
+            </h2>
+            <p>
+              Ever been in a room and felt like something was missing? Perhaps
+              it felt slightly bare and uninviting. I've got some simple tips to
+              help you make any room feel complete.
+            </p>
+          </div>
+          <div class="user-info">
+            <div class="user">
+              <img
+                src="./assets/images/avatar-michelle.jpg"
+                alt="foto usuario"
+              />
+              <div>
+                <p><strong>Michelle Appleton</strong></p>
+                <p>28 Jun 2020</p>
+              </div>
             </div>
-            
-            <div>
-                <div class="section-text">
-                    <h2>
-                        Shift the overall look and feel by adding these woderful touches to forniture in your home
-                    </h2>
-                    <p>
-                        Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I've got some simple tips to help you make any room feel complete.
-                    </p>
-                </div>
-                <div class="user-info" >
-                    <div class="user">
-                        <img src="./assets/images/avatar-michelle.jpg" alt="foto usuario">
-                    <div >
-                        <p><strong>Michelle Appleton</strong></p>
-                        <p>28 Jun 2020</p>
-                    </div>
-                    </div>
-                    <div class="share-btn"><ion-icon name="arrow-redo"></ion-icon>
-                    </div>                    
-                </div>
-                <div class="share-container share-container-off" id="share-container-off">
-                    <div class="share-links">
-                        <p>SHARE</p>
-                        <div class="logo-facebook"><ion-icon name="logo-facebook"></ion-icon></div>
-                        <div class="sandwich"></div>
-                        <div><ion-icon name="logo-twitter"></ion-icon></div>
-                        <div><ion-icon name="logo-pinterest"></ion-icon></div>
-                    </div>
-                    <div class="share-btn"><ion-icon name="arrow-redo"></ion-icon>
-                    </div>                    
-                </div>
+            <div class="share-btn"><ion-icon name="arrow-redo" role="img" class="md hydrated"></ion-icon></div>
+          </div>
+          <div
+            class="share-container share-container-off"
+            id="share-container-off"
+          >
+            <div class="share-links">
+              <p>SHARE</p>
+              <div class="logo-facebook">
+                <ion-icon name="logo-facebook" role="img" class="md hydrated"></ion-icon>
+              </div>
+              <div class="sandwich"></div>
+              <div><ion-icon name="logo-twitter" role="img" class="md hydrated"></ion-icon></div>
+              <div><ion-icon name="logo-pinterest" role="img" class="md hydrated"></ion-icon></div>
             </div>
-        </article>
-    <script  type = "module"  src = " https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js " ></script> 
-    <script  nomodule  src = " https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js "> </script>
-</body>
+            <div class="share-btn"><ion-icon name="arrow-redo" role="img" class="md hydrated"></ion-icon></div>
+          </div>
+        </div>
+      </article>
+    </main>
+  </body>
 </html>
