@@ -1,8 +1,8 @@
 # Frontend Mentor - Article Preview Component
 
-# Frontend Mentor - Article Preview Component
-
 This is my solution to the [Article Preview Component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT). This project helped me improve my skills in responsive design and DOM manipulation using JavaScript.
+
+[![CodeFactor](https://www.codefactor.io/repository/github/carlosdamota/newsletter-sign-up-js-fm/badge)](https://www.codefactor.io/repository/github/carlosdamota/newsletter-sign-up-js-fm)
 
 ## Table of Contents
 
